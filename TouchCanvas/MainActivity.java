@@ -45,13 +45,15 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case MotionEvent.ACTION_MOVE:
                 case MotionEvent.ACTION_UP:
-                    startX = (int) event.getX();
-                    startY = (int) event.getY();
+                    stopX = (int) event.getX();
+                    stopY = (int) event.getY();
                     this.invalidate();
                     break;
             }
             return true;
         }
+
+        @Override
         protected void onDraw(Canvas canvas) {
             super.onDraw(canvas);
             Paint paint = new Paint();
@@ -74,3 +76,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+
