@@ -102,6 +102,11 @@
             style = "?android:attr/ratingBarStyleIndicator"
             android:layout_gravity="right"/>
     </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnReturn"
+            android:text="돌아가기"/>
+    </TableRow>
 
 
 </TableLayout>
